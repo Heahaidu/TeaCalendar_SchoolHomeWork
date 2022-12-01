@@ -1,0 +1,5 @@
+P:\C++\TeaCalendar\TeaCalendar\x64\Debug\TeaCalendar.vcxproj.AssemblyReference.cache
+P:\C++\TeaCalendar\TeaCalendar\x64\Debug\TeaCalendar.vcxproj.SuggestedBindingRedirects.cache
+P:\C++\TeaCalendar\TeaCalendar\x64\Debug\TeaCalendar.DeleteDialog.resources
+P:\C++\TeaCalendar\TeaCalendar\x64\Debug\TeaCalendar.Interface.resources
+P:\C++\TeaCalendar\TeaCalendar\x64\Debug\TeaCalendar.vcxproj.GenerateResource.cache

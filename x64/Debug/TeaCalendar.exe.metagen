@@ -1,0 +1,135 @@
+  TeaCalendar.DeleteDialog.resources - Embedded, ContainedInManifestFile, 
+  TeaCalendar.Interface.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly TeaCalendar, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC.STLCLR, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class User: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String userID : Public
+    System.String path : Public
+  Methods:
+    userCheck(String, String): PrivateScope, Public, HideBySig
+    keepLogin(): PrivateScope, Public, HideBySig
+    save(String, String): PrivateScope, Public, HideBySig
+    del(): PrivateScope, Public, HideBySig
+    getUser(vector<System::String ^>&, String): PrivateScope, Public, HideBySig
+    getTime(vector<System::String ^>&, String): PrivateScope, Public, HideBySig
+    duplicateTime(vector<System::String ^>&, String, String): PrivateScope, Public, HideBySig
+    checkTime(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    saveCalendar(String, String, String): PrivateScope, Public, HideBySig
+    deleteCalendar(String, String): PrivateScope, Public, HideBySig
+    freeTime(vector<System::String ^>&, String): PrivateScope, Public, HideBySig
+    convert(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, HideBySig
+    freetimeisMinute(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    hour(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    minute(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+Class Config: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    cliext.vector<System::String ^> list_class IsByValue : Public, InitOnly
+    System.String path : Public
+  Methods:
+    getListClass(vector<System::String ^>&, String): PrivateScope, Public, HideBySig
+    getUserName(String): PrivateScope, Public, HideBySig
+    getPosition(String): PrivateScope, Public, HideBySig
+    getTime(vector<System::String ^>&, String): PrivateScope, Public, HideBySig
+    recommendClass(vector<System::String ^>&, String, String): PrivateScope, Public, HideBySig
+    checkTime(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    hour(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    minute(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    ~Config(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DateTimeReserve: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getDate(vector<System::String ^>&): PrivateScope, Public, HideBySig
+Class TeaCalendar.DeleteDialog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String, System.String, System.Windows.Forms.Panel, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean b : Public
+    System.String time : Public
+    System.String path : Public
+    System.String userID : Public
+    System.Windows.Forms.Panel personal_classroom_panel : Public
+  Methods:
+    getPerm(): PrivateScope, Public, HideBySig
+Class PersonalPanel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Panel, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User user : Public
+    System.String path : Public
+    System.String userID : Public
+    System.Windows.Forms.Panel personal_classroom_panel : Public
+    Int32 _month : Public
+    Int32 _day : Public
+    Int32 _year : Public
+    Int32 minute : Public
+    Int32 hour : Public
+    Int32 month : Public
+    Int32 day : Public
+    Int32 year : Public
+    Int32 _minute : Public
+    Int32 _hour : Public
+  Methods:
+    runnableDateTime(Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    PersonalGet(String, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    formLocation(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Delete_MouseDown(Object, MouseEventArgs): PrivateScope, Public, HideBySig
+    hour_void(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    minute_void(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+Class GlobalPanel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Config config : Public
+    System.Windows.Forms.Panel global_classroom_panel : Public
+  Methods:
+    GlobalGet(String): PrivateScope, Public, HideBySig
+    formLocation(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+Class TeaCalendar.Interface: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean loading : Public
+    Boolean calendarloading_b : Public
+    Boolean click : Public
+    Boolean swtich : Public
+    Boolean runnable : Public
+    Int32 _day : Public
+    Int32 _month : Public
+    Int32 _year : Public
+    GlobalPanel gloPanel : Public
+    User user : Public
+    Config config : Public
+    PersonalPanel personalPanel : Public
+    DateTimeReserve dateReserve : Public
+    cliext.vector<System::String ^> monTh IsByValue : Public, InitOnly
+    Int32 minute : Public
+    Int32 hour : Public
+  Methods:
+    runnableDateTime(): PrivateScope, Public, HideBySig
+    onEnable(): PrivateScope, Public, HideBySig
+    onLogin(): PrivateScope, Public, HideBySig
+    freeTimeBox(String): PrivateScope, Public, HideBySig
+    DatePanel(): PrivateScope, Public, HideBySig
+    refreshPanel(): PrivateScope, Public, HideBySig
+    getOffer(): PrivateScope, Public, HideBySig
+    loginLoading(): PrivateScope, Public, HideBySig
+    calendarLoading(): PrivateScope, Public, HideBySig

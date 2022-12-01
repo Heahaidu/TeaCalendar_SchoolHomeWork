@@ -1,0 +1,12 @@
+1:
+    name: "Nguyen Van A"
+    position: "Teacher"
+    password: '1'
+2: 
+    name: 'Nguyen Van B'
+    position: "Teacher"
+    password: '2'
+3: 
+    name: 'Nguyen Van C'
+    position: "Teacher"
+    password: '3'   
